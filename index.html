@@ -6,15 +6,17 @@
   <link rel="stylesheet" href="styles.css">
   <style>
     body {
-      background-color: #fff;
       margin: 0;
+      background-color: #fff;
       padding: 0;
+      font-family: Arial, sans-serif;
     }
     
     header {
-      background-color: #333;
+      background-color: #FF8C00;
       color: #fff;
       padding: 20px;
+      margin-bottom: 20px;
     }
     
     #image-section {
@@ -25,7 +27,17 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center top;
+      max-width: 100%;
+      max-height: calc(100vh - 100px); /* Adjust the height based on your header size */
+      overflow: hidden;
     }
+
+
+
+
+
+
+
     
     #image-overlay {
       position: absolute;
@@ -49,7 +61,7 @@
       width: 100%;
       line-height: 1.2;
       margin-bottom: 20px;
-      color: #000;
+      
     }
 
     #image-overlay h2 {
@@ -58,7 +70,7 @@
       width: 100%;
       line-height: 1.2;
       margin-bottom: 20px;
-      color: #000;
+     
     }
     
     #image-overlay h3 {
@@ -66,7 +78,7 @@
       font-size: 40px;
       width: 100%;
       line-height: 1.2;
-      color: #000;
+      
     }
     
     #about-link {
@@ -100,11 +112,13 @@
     <h1>The 1st International Workshop on Reliable and Secure AI for Software Engineering</h1>
     <nav>
       <ul>
-        <li><a href="about.html" target="_blank">About</a></li>
-        <li><a href="schedule.html">Schedule</a></li>
-        <li><a href="speakers.html">Speakers</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="papers.html">Call for Papers</a></li>
+        <li><a href="partecipation.html">Call for Participation</a></li>
+        <li><a href="keynote.html">Keynote Speakers</a></li>
         <li><a href="registration.html">Registration</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="committee.html">Committee</a></li>
+        <li><a href="program.html">Program</a></li>
       </ul>
     </nav>
   </header>
@@ -113,7 +127,7 @@
     <div id="image-overlay">
       <h1>ReSAISE</h1>
       <h2>The 1st International Workshop on Reliable and Secure AI for Software Engineering</h2>
-      <h3>Conference Dates: October, 2023</h3>
+      <h3>Florence, Italy - October, 2023</h3>
     </div>
   </section>
 
