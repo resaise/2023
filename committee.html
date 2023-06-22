@@ -5,7 +5,7 @@
   <title>Program Committee - ReSAISE</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    body {
+     body {
       margin: 20px 20px 20px 20px;
       font-family: Arial, sans-serif;
       font-size: 16px;
@@ -44,7 +44,6 @@
       text-decoration: underline;
     }
 
-   
     h2 {
       margin-bottom: 20px;
       font-size: 36px;
@@ -60,35 +59,81 @@
       font-size: 20px;
     }
 
-    figure-container {
+  figure-container {
       text-align: center;
       margin-bottom: 20px;
-      margin-left: 20px;
+      margin-left: 200px;
       margin-right: 20px;
+      position: relative;
     }
 
-    .figure-container img {
+
+    .text-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+     #image-section {
+      position: relative;
+      width: auto;
+      height: 50vh;
+      background-image: url('florence.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      max-width: 100%;
+      max-height: calc(100vh - 100px); /* Adjust the height based on your header size */
+      overflow: hidden;
+      text-align: center;
+
+    }
+    
+    #image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      max-height: 500px;
-      object-fit: cover;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    
+    #image-overlay h1 {
+      margin-top: 0;
+      font-size: 50px;
+      width: 100%;
+      line-height: 1.2;
+      margin-bottom: 10px;
+      color: #fff;
+      
     }
 
-     .text-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
+    #image-overlay h2 {
+      margin-top: 0;
+      font-size: 30px;
+      width: 100%;
+      line-height: 1.2;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+  
+
   </style>
 </head>
 <body>
   <header>
-    <h1>The 1st IEEE International Workshop on Reliable and Secure AI for Software Engineering</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
         <li><a href="papers.html">Call for Papers</a></li>
-        <li><a href="partecipation.html">Call for Participation</a></li>
+        <li><a href="participation.html">Call for Participation</a></li>
         <li><a href="keynote.html">Keynote Speakers</a></li>
         <li><a href="registration.html">Registration</a></li>
         <li><a href="committee.html">Committee</a></li>
@@ -97,9 +142,16 @@
     </nav>
   </header>
 
-  <div class="figure-container">
-    <img src="florence.jpg" alt="Conference Image">
-  </div>
+
+    <div class="figure-container">
+      <section id="image-section">
+        <div id="image-overlay">
+          <h1>ReSAISE</h1>
+          <h2>The 1st IEEE International Workshop on Reliable and Secure AI for Software Engineering</h2>
+          <h2>Co-located with ISSRE 2023, October 9-12, Florence, Italy</h2>
+        </div>
+      </section>
+    </div>  
 
   <div class="text-container">
   <h2>Program Chairs</h2>

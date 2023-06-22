@@ -2,11 +2,11 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Program - ReSAISE</title>
+  <title>ReSAISE</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-     body {
-      margin: 20px 20px 20px 20px;
+      body {
+      margin: 0;
       font-family: Arial, sans-serif;
       font-size: 16px;
       line-height: 1.5;
@@ -58,35 +58,19 @@
     ul {
       font-size: 20px;
     }
-
-  figure-container {
-      text-align: center;
-      margin-bottom: 20px;
-      margin-left: 200px;
-      margin-right: 20px;
+    
+    #image-section {
       position: relative;
-    }
-
-
-    .text-container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-     #image-section {
-      position: relative;
-      width: auto;
-      height: 50vh;
+      width: 100%;
+      height: 100vh;
       background-image: url('florence.jpg');
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: center top;
       max-width: 100%;
       max-height: calc(100vh - 100px); /* Adjust the height based on your header size */
       overflow: hidden;
       text-align: center;
-
     }
     
     #image-overlay {
@@ -101,39 +85,79 @@
       align-items: center;
       text-align: center;
       color: #fff;
-      padding: 20px;
+      padding: 50px;
       box-sizing: border-box;
+      text-align: center;
     }
     
     #image-overlay h1 {
       margin-top: 0;
-      font-size: 50px;
+      font-size: 80px;
       width: 100%;
       line-height: 1.2;
-      margin-bottom: 10px;
-      color: #fff;
+      margin-bottom: 20px;
       
     }
 
     #image-overlay h2 {
       margin-top: 0;
-      font-size: 30px;
+      font-size: 60px;
       width: 100%;
       line-height: 1.2;
-      margin-bottom: 10px;
-      color: #fff;
+      margin-bottom: 20px;
+     
     }
-  
+    
+    #image-overlay h3 {
+      margin-top: 0;
+      font-size: 40px;
+      width: 100%;
+      line-height: 1.2;
+      
+    }
+    
+    #about-link {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    #about-link:hover {
+      text-decoration: underline;
+    }
+    
+    #sections-container {
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    
+    section {
+      margin-bottom: 40px;
+    }
+    
+    section h2 {
+      font-size: 24px;
+    }
+
+    figure-container {
+      text-align: center;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
 
   </style>
 </head>
 <body>
   <header>
+    <h1>The 1st IEEE International Workshop on Reliable and Secure AI for Software Engineering</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="papers.html">Call for Papers</a></li>
-        <li><a href="participation.html">Call for Participation</a></li>
+        <li><a href="partecipation.html">Call for Participation</a></li>
         <li><a href="keynote.html">Keynote Speakers</a></li>
         <li><a href="registration.html">Registration</a></li>
         <li><a href="committee.html">Committee</a></li>
@@ -142,22 +166,37 @@
     </nav>
   </header>
 
+  <div class="figure-container">
+  <section id="image-section">
+    <div id="image-overlay">
+      <h1>ReSAISE</h1>
+      <h3>The 1st IEEE International Workshop on Reliable and Secure AI for Software Engineering</h3>
+      <h3>Co-located with ISSRE 2023, October 9-12, Florence, Italy</h3>
+    </div>
+  </section>
+</div>
+  <div id="sections-container">
+    <section id="schedule">
+      <!-- Include schedule.html -->
+      <div include="schedule.html"></div>
+    </section>
 
-    <div class="figure-container">
-      <section id="image-section">
-        <div id="image-overlay">
-          <h1>ReSAISE</h1>
-          <h2>The 1st IEEE International Workshop on Reliable and Secure AI for Software Engineering</h2>
-          <h2>Co-located with ISSRE 2023, October 9-12, Florence, Italy</h2>
-        </div>
-      </section>
-    </div>  
+    <section id="speakers">
+      <!-- Include speakers.html -->
+      <div include="speakers.html"></div>
+    </section>
 
-  <div class="text-container">
-    <h2>Program</h2>
-    <p>TBD</p>
+    <section id="registration">
+      <!-- Include registration.html -->
+      <div include="registration.html"></div>
+    </section>
+
+    <section id="contact">
+      <!-- Include contact.html -->
+      <div include="contact.html"></div>
+    </section>
   </div>
-        
 
+  <script src="include.js"></script>
 </body>
 </html>
